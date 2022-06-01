@@ -12,20 +12,36 @@
 }
 
 .header {
-    background-color: #59656F;
+    background-color: #e62143;
     color: #FFFFFF;
     padding: 20px;
 }
 
 .main-container {
     padding-top: 30px;
+    width: 50%;
     margin: auto;
-    width: 60%;
+}
+
+.details-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.details,
+.input-container {
     text-align: center;
+    margin: auto;
+    padding-top: 2rem;
+    width: 80%;
+}
+
+.image-details-container {
+    padding-top: 2rem;
 }
 
 #loading {
-    width: 50px;
+    width: 150px;
 }
 
 input,
@@ -35,12 +51,28 @@ button {
 }
 
 button {
-    border-radius: 10px;
+    background: #e62143;
+    border-radius: 11px;
     border: none;
-    background-color: #bde0fe;
-    padding: 0.3em;
+    color: #fff;
+    cursor: pointer;
 }
 
 button:hover {
     cursor: pointer;
+}
+
+.loading-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.weather-img {
+    height: 80px;
+}
+
+#description-heading {
+    margin-top: 1rem;
 }

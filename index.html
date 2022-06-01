@@ -17,14 +17,34 @@
     </div>
 
     <div class="main-container">
-        <input id="input-Location" placeholder="Location">
-        <button id="btn-Submit">Submit</button>
-        <p class="hidden" id="error">Error. Invalid location entered.</p>
-        <h2>Current Temp for <span id="location"></span>: <span id="current-temperature"></span>°C</h2>
-        <h3>Description: <span id="description"></span></h3>
+        <div class="input-container">
+            <input id="input-Location" placeholder="Location">
+            <button id="btn-Submit">Submit</button>
+
+            <p class="hidden" id="error">Error. Invalid location entered.</p>
+        </div>
+
+        <div class="details-container">
+            <div class="details">
+                <h2 class="hidden" id="current-heading"><span id="location"></span>: <span
+                        id="current-temperature"></span>°C</h2>
+                <h3 class="hidden" id="description-heading"><span id="description"></span></h3>
+            </div>
+            <div class="image-details-container">
+                <img class="weather-img hidden" src="./images/icons8-clouds-64.png" alt="Clouds" id="cloudsImg">
+                <img class="weather-img hidden" src="./images/icons8-rain-40.png" alt="Rain" id="rainImg">
+                <img class="weather-img hidden" src="./images/icons8-sun-with-face-48.png" alt=Sunny" id="sunnyImg">
+            </div>
+        </div>
+    </div>
+
+    <div class="loading-container">
         <img id="loading" class="hidden" src="./images/loadingcircle.gif">
     </div>
+    <script type='text/javascript' src='config.js'></script>
+
     <script src="app.js"></script>
+
 </body>
 
 </html>
